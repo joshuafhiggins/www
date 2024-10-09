@@ -9,9 +9,9 @@ import { Navigation } from "@/components/navigation";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: "Zen Browser",
-	description: "Download now and experience the Zen Browser",
-	keywords: ["Zen", "Browser", "Zen Browser", "Web", "Internet", "Fast"],
+	title: "Realm",
+	description: "___ for the rest of us.",
+	keywords: ["Realm", "Communication", "Realm Chat", "Communitity", "Internet", "Fast"],
 };
 
 export default async function RootLayout({
@@ -23,15 +23,6 @@ export default async function RootLayout({
 		<html suppressHydrationWarning>
 			<head>
 				<link rel="me" href="https://fosstodon.org/@zenbrowser"></link>
-				{/* Analitics */}
-				<script
-					defer
-					src="https://cdn.jsdelivr.net/gh/zen-browser/www/public/uma.js"
-					data-host-url="https://uma.zen-browser.app"
-					data-website-id="7148ef7c-5299-4ca1-9a18-9d6964e93b53"
-					data-domains="zen-browser.app"
-				></script>
-				{/* End */}
 				<link
 					rel="alternate"
 					type="application/rss+xml"
@@ -44,8 +35,7 @@ export default async function RootLayout({
 					<StyledComponentsRegistry>
 						<div className="mt-5">
 							{children}
-							<Footer />
-							<Navigation /> {/* At the bottom of the page */}
+							<Navigation />
 						</div>
 					</StyledComponentsRegistry>
 				</ThemeProvider>
