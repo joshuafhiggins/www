@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
 	title: "Realm",
-	description: "___ for the rest of us.",
+	description: "Chatting, for the rest of us.",
 	keywords: ["Realm", "Communication", "Realm Chat", "Communitity", "Internet", "Fast"],
 };
 
@@ -22,13 +22,7 @@ export default async function RootLayout({
 	return (
 		<html suppressHydrationWarning>
 			<head>
-				<link rel="me" href="https://fosstodon.org/@zenbrowser"></link>
-				<link
-					rel="alternate"
-					type="application/rss+xml"
-					title="Zen Browser Release Notes"
-					href="https://www.zen-browser.app/feed.xml"
-				/>
+				<link rel="me" href="https://joshuafhiggins.github.io/"></link>
 			</head>
 			<body className={inter.className}>
 				<ThemeProvider attribute="class" defaultTheme="dark">
