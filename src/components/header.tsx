@@ -11,7 +11,7 @@ import confetti from "canvas-confetti";
 
 const download = () => {
 	throwConfetti()
-	window.location.replace(`https://realm.abunchofknowitalls.com/Realm.exe`)
+	window.location.replace(`https://github.com/joshuafhiggins/realm-chat/releases/latest/download/Realm.exe`)
 }
 
 const throwConfetti = () => {
