@@ -69,7 +69,7 @@ export default function Header() {
 					</a>
 					<a className="py-1">
 						<Button className="-translate-y-4 animate-fade-in gap-1 text-white opacity-0 ease-in-out [--animation-delay:800ms] dark:text-black" onClick={() => {
-								download("https://github.com/joshuafhiggins/realm-chat/releases/latest/download/Realm.app")
+								download("https://github.com/joshuafhiggins/realm-chat/releases/latest/download/Realm_arm64.zip.app")
 							}}>
 								<span>Download Realm for macOS (Apple Silicon) </span>
 								<FaApple className="ml-1 size-4 transition-transform duration-300 ease-in-out group-hover:translate-x-1" width="64" height="64" />
@@ -77,7 +77,7 @@ export default function Header() {
 					</a>
 					<a className="py-1">
 					<Button className="-translate-y-4 animate-fade-in gap-1 text-white opacity-0 ease-in-out [--animation-delay:1000ms] dark:text-black" onClick={() => {
-							download("https://github.com/joshuafhiggins/realm-chat/releases/latest/download/Realm (Intel).app")
+							download("https://github.com/joshuafhiggins/realm-chat/releases/latest/download/Realm_x64.zip.app")
 						}}>
 							<span>Download Realm for macOS (Intel) </span>
 							<FaApple className="ml-1 size-4 transition-transform duration-300 ease-in-out group-hover:translate-x-1" width="64" height="64" />
