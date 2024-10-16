@@ -8,10 +8,11 @@ import { AppWindow, AppWindowIcon, AppWindowMac, ChevronDown } from "lucide-reac
 import CoolHeaderText from "./cool-header-text";
 import Particles from "./ui/particles";
 import confetti from "canvas-confetti";
+import { FaApple } from "react-icons/fa";
 
-const download = () => {
+function download(link: string): void {
 	throwConfetti()
-	window.location.replace(`https://github.com/joshuafhiggins/realm-chat/releases/latest/download/Realm.exe`)
+	window.location.replace(link)
 }
 
 const throwConfetti = () => {
@@ -57,11 +58,29 @@ export default function Header() {
 					Collaborate, Communicate, Connect
 					<br className="hidden md:block" /> Because that's what you wanted and you deserve to own your content.
 				</p>
-				<div className="flex w-full flex-col justify-center md:flex-row">
-					<a > 
-						<Button className="-translate-y-4 animate-fade-in gap-1 text-white opacity-0 ease-in-out [--animation-delay:600ms] dark:text-black" onClick={download}>
-							<span>Download Realm for </span>
+				<div className="flex w-full flex-col justify-center md:flex-col">
+					<a className="py-1"> 
+					<Button className="-translate-y-4 animate-fade-in gap-1 text-white opacity-0 ease-in-out [--animation-delay:600ms] dark:text-black" onClick={() => {
+							download("https://github.com/joshuafhiggins/realm-chat/releases/latest/download/Realm.exe")
+						}}>
+							<span>Download Realm for Windows </span>
 							<svg className="ml-1 size-4 transition-transform duration-300 ease-in-out group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" width="64" height="64" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 640 640"><path d="M.2 298.669L0 90.615l256.007-34.76v242.814H.201zM298.658 49.654L639.905-.012v298.681H298.657V49.654zM640 341.331l-.071 298.681L298.669 592V341.332h341.33zM255.983 586.543L.189 551.463v-210.18h255.794v245.26z"/></svg>
+					</Button>
+					</a>
+					<a className="py-1">
+						<Button className="-translate-y-4 animate-fade-in gap-1 text-white opacity-0 ease-in-out [--animation-delay:800ms] dark:text-black" onClick={() => {
+								download("https://github.com/joshuafhiggins/realm-chat/releases/latest/download/Realm.app")
+							}}>
+								<span>Download Realm for macOS (Apple Silicon) </span>
+								<FaApple className="ml-1 size-4 transition-transform duration-300 ease-in-out group-hover:translate-x-1" width="64" height="64" />
+						</Button>
+					</a>
+					<a className="py-1">
+					<Button className="-translate-y-4 animate-fade-in gap-1 text-white opacity-0 ease-in-out [--animation-delay:1000ms] dark:text-black" onClick={() => {
+							download("https://github.com/joshuafhiggins/realm-chat/releases/latest/download/Realm (Intel).app")
+						}}>
+							<span>Download Realm for macOS (Intel) </span>
+							<FaApple className="ml-1 size-4 transition-transform duration-300 ease-in-out group-hover:translate-x-1" width="64" height="64" />
 						</Button>
 					</a>
 				</div>
