@@ -67,7 +67,7 @@ export default function Header() {
 							<svg className="ml-1 size-4 transition-transform duration-300 ease-in-out group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" width="64" height="64" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 640 640"><path d="M.2 298.669L0 90.615l256.007-34.76v242.814H.201zM298.658 49.654L639.905-.012v298.681H298.657V49.654zM640 341.331l-.071 298.681L298.669 592V341.332h341.33zM255.983 586.543L.189 551.463v-210.18h255.794v245.26z"/></svg>
 					</Button>
 					</a>
-					<a className="py-1">
+					{/* <a className="py-1">
 						<Button className="-translate-y-4 animate-fade-in gap-1 text-white opacity-0 ease-in-out [--animation-delay:800ms] dark:text-black" onClick={() => {
 								download("https://github.com/joshuafhiggins/realm-chat/releases/latest/download/Realm_arm64.app.zip")
 							}}>
@@ -82,7 +82,7 @@ export default function Header() {
 							<span>Download Realm for macOS (Intel) </span>
 							<FaApple className="ml-1 size-4 transition-transform duration-300 ease-in-out group-hover:translate-x-1" width="64" height="64" />
 						</Button>
-					</a>
+					</a> */}
 				</div>
 			</section>
 			<Particles
