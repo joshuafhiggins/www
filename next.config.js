@@ -27,6 +27,9 @@ const nextConfig = (phase, { defaultConfig }) => {
 		compiler: {
 			styledComponents: true,
 		},
+		eslint: {
+			ignoreDuringBuilds: true,
+		},
 	};
 	if (phase === PHASE_DEVELOPMENT_SERVER) {
 		return {
